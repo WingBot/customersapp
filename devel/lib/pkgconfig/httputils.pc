@@ -1,0 +1,8 @@
+prefix=/home/zech/http_ws/devel
+
+Name: httputils
+Description: Description of httputils
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zech/http_ws/devel/lib 
+Requires: 

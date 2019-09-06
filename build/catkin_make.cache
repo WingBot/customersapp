@@ -1,0 +1,2 @@
+httputils
+-DCATKIN_DEVEL_PREFIX=/home/zech/http_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zech/http_ws/install -G Unix Makefiles

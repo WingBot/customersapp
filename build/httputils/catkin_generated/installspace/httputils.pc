@@ -1,0 +1,8 @@
+prefix=/home/zech/http_ws/install
+
+Name: httputils
+Description: Description of httputils
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zech/http_ws/install/lib 
+Requires: 
