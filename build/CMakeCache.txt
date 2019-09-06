@@ -262,6 +262,9 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Dependencies for target
+base64_LIB_DEPENDS:STATIC=
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
@@ -310,6 +313,9 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
 httputils_BINARY_DIR:STATIC=/home/zech/http_ws/build/httputils
+
+//Dependencies for target
+httputils_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 httputils_SOURCE_DIR:STATIC=/home/zech/http_ws/src/httputils

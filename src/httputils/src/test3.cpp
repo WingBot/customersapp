@@ -5,7 +5,7 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-//
+#include "base64.h"
 
 size_t write_data(void *ptr, size_t size, size_t nmemb, void *stream) 
 {
@@ -37,7 +37,16 @@ int main(int argc, char *argv[])
 	memset(JsonData, 0, sizeof(JsonData));
 	strcpy(JsonData,number.c_str()); 
         cout << dt << "-------------------------------------" << endl;
+	const std::string s = 
+	"René Nyffenegger\n"
+	"http://www.renenyffenegger.ch\n"
+	"passion for data\n";
 
+	std::string encoded = base64_encode(reinterpret_cast<const unsigned char*>(s.c_str()), s.length());
+	std::string decoded = base64_decode(encoded);
+
+	std::cout << "encoded: " << std::endl << encoded << std::endl << std::endl;
+	std::cout << "decoded: " << std::endl << decoded << std::endl;
         /*HTTP GET json data*/
         std::stringstream out;
         void* curl = curl_easy_init();

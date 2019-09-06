@@ -109,6 +109,7 @@ test3_node_EXTERNAL_OBJECTS =
 /home/zech/http_ws/devel/lib/httputils/test3_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/zech/http_ws/devel/lib/httputils/test3_node: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/zech/http_ws/devel/lib/httputils/test3_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/zech/http_ws/devel/lib/httputils/test3_node: /home/zech/http_ws/devel/lib/libbase64.so
 /home/zech/http_ws/devel/lib/httputils/test3_node: httputils/CMakeFiles/test3_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zech/http_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/zech/http_ws/devel/lib/httputils/test3_node"
 	cd /home/zech/http_ws/build/httputils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test3_node.dir/link.txt --verbose=$(VERBOSE)

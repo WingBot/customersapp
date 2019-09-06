@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zech/http_ws/src/httputils/src/base64.cpp
+base64.h
+/home/zech/http_ws/src/httputils/src/base64.h
+iostream
+-
+
+/home/zech/http_ws/src/httputils/src/base64.h
+string
+-
+

@@ -376,6 +376,21 @@ httputils_node/fast:
 .PHONY : httputils_node/fast
 
 # Convenience name for target.
+httputils/CMakeFiles/base64.dir/rule:
+	cd /home/zech/http_ws/build && $(MAKE) -f CMakeFiles/Makefile2 httputils/CMakeFiles/base64.dir/rule
+.PHONY : httputils/CMakeFiles/base64.dir/rule
+
+# Convenience name for target.
+base64: httputils/CMakeFiles/base64.dir/rule
+
+.PHONY : base64
+
+# fast build rule for target.
+base64/fast:
+	cd /home/zech/http_ws/build && $(MAKE) -f httputils/CMakeFiles/base64.dir/build.make httputils/CMakeFiles/base64.dir/build
+.PHONY : base64/fast
+
+# Convenience name for target.
 httputils/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /home/zech/http_ws/build && $(MAKE) -f CMakeFiles/Makefile2 httputils/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : httputils/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -434,6 +449,33 @@ test2_node: httputils/CMakeFiles/test2_node.dir/rule
 test2_node/fast:
 	cd /home/zech/http_ws/build && $(MAKE) -f httputils/CMakeFiles/test2_node.dir/build.make httputils/CMakeFiles/test2_node.dir/build
 .PHONY : test2_node/fast
+
+src/base64.o: src/base64.cpp.o
+
+.PHONY : src/base64.o
+
+# target to build an object file
+src/base64.cpp.o:
+	cd /home/zech/http_ws/build && $(MAKE) -f httputils/CMakeFiles/base64.dir/build.make httputils/CMakeFiles/base64.dir/src/base64.cpp.o
+.PHONY : src/base64.cpp.o
+
+src/base64.i: src/base64.cpp.i
+
+.PHONY : src/base64.i
+
+# target to preprocess a source file
+src/base64.cpp.i:
+	cd /home/zech/http_ws/build && $(MAKE) -f httputils/CMakeFiles/base64.dir/build.make httputils/CMakeFiles/base64.dir/src/base64.cpp.i
+.PHONY : src/base64.cpp.i
+
+src/base64.s: src/base64.cpp.s
+
+.PHONY : src/base64.s
+
+# target to generate assembly for a file
+src/base64.cpp.s:
+	cd /home/zech/http_ws/build && $(MAKE) -f httputils/CMakeFiles/base64.dir/build.make httputils/CMakeFiles/base64.dir/src/base64.cpp.s
+.PHONY : src/base64.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -525,10 +567,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
@@ -541,12 +583,16 @@ help:
 	@echo "... test"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... httputils_node"
+	@echo "... base64"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... test2_node"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... src/base64.o"
+	@echo "... src/base64.i"
+	@echo "... src/base64.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

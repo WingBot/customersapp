@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/zech/http_ws/src/httputils/src/base64.h
+string
+-
+
 /home/zech/http_ws/src/httputils/src/test3.cpp
 stdio.h
 -
@@ -21,6 +25,8 @@ iostream
 -
 fstream
 -
+base64.h
+/home/zech/http_ws/src/httputils/src/base64.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

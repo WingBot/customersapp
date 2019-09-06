@@ -465,6 +465,19 @@ httputils_node/fast:
 .PHONY : httputils_node/fast
 
 #=============================================================================
+# Target rules for targets named base64
+
+# Build rule for target.
+base64: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 base64
+.PHONY : base64
+
+# fast build rule for target.
+base64/fast:
+	$(MAKE) -f httputils/CMakeFiles/base64.dir/build.make httputils/CMakeFiles/base64.dir/build
+.PHONY : base64/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
 
 # Build rule for target.
@@ -552,6 +565,7 @@ help:
 	@echo "... test3_node"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... httputils_node"
+	@echo "... base64"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"

@@ -121,9 +121,11 @@ include_directories(
 )
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
+#add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/httputils.cpp
 # )
+
+add_library(base64  src/base64.cpp)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -153,23 +155,11 @@ set(LIB_PRO
   curl
 )
 ## Specify libraries to link a library or executable target against
- target_link_libraries(${PROJECT_NAME}_node
-   ${catkin_LIBRARIES}
-	${LIB_PRO}
-    jsoncpp
- )
+target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES}	${LIB_PRO}  jsoncpp )
 
-  target_link_libraries(test2_node
-   ${catkin_LIBRARIES}
-	${LIB_PRO}
-    jsoncpp
- )
+target_link_libraries(test2_node  ${catkin_LIBRARIES} ${LIB_PRO}  jsoncpp )
  
-   target_link_libraries(test3_node
-   ${catkin_LIBRARIES}
-	${LIB_PRO}
-    jsoncpp
- )
+target_link_libraries(test3_node  ${catkin_LIBRARIES} ${LIB_PRO}  jsoncpp  base64)
 #############
 ## Install ##
 #############

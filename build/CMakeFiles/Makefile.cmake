@@ -196,6 +196,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "httputils/CMakeFiles/test3_node.dir/DependInfo.cmake"
   "httputils/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "httputils/CMakeFiles/httputils_node.dir/DependInfo.cmake"
+  "httputils/CMakeFiles/base64.dir/DependInfo.cmake"
   "httputils/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
   "httputils/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "httputils/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"
